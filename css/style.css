@@ -1,0 +1,302 @@
+@import url('https://fonts.googleapis.com/css2?family=Itim&display=swap');
+
+
+/*CSS BODY*/
+* {
+    margin: 0%;
+    padding: 0%;
+    font-family: Itim;
+    font-size: 20px;
+
+}
+
+body {
+    background-image: url(../multimedia/img/mifondo.png);
+    overflow: auto;
+}
+
+
+/* GRID CONTACTO */
+#grilla {
+    display: grid;
+    grid-template-areas:
+        "header"
+        "nav"
+        "form"
+        "newsletter"
+        "footer";
+    grid-template-rows: 250px 100px 600px 100px 150px;
+}
+
+header {
+    grid-area: header;
+}
+
+nav {
+    grid-area: nav;
+}
+
+section#form {
+    grid-area: form;
+}
+
+section#newsletter {
+    grid-area: newsletter;
+}
+
+footer {
+    grid-area: footer;
+}
+
+
+
+
+
+/* LOGO */
+.logo {
+    margin: auto;
+    display: block;
+    height: 300px;
+    width: 300px;
+    margin-top: -30px;
+}
+
+
+
+/* NAVEGADOR */
+
+.puntos {
+    list-style-type: none;
+}
+
+.navbarra {
+    margin-left: 30%;
+}
+
+/* SECTION */
+
+.centrar {
+    text-align: justify;
+}
+
+.iframe {
+    margin-left: 35%;
+    margin-right: 35%;
+    width: 30%;
+    /* height: 90%; */
+}
+
+.espacioSuperior {
+    margin-top: 40px;
+}
+
+.masEspacio {
+    margin-top: 80px;
+}
+
+main section div p {
+    margin-left: 15%;
+    margin-right: 15%;
+}
+
+.fotosFlex {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.tamañoImgIndex {
+    margin: 1px 30px 30px 30px;
+    height: 300px;
+    width: 200px;
+}
+
+.tamañoImagen {
+    height: 220px;
+    width: 170px;
+    margin: 10px 20px 20px 20px;
+    display: inline;
+}
+
+#texto {
+    display: block;
+    text-align: center;
+}
+
+h1 {
+    color: rgb(37, 100, 118);
+    text-align: center;
+    font-size: 35px;
+}
+
+h2 {
+    color: rgb(92, 138, 151);
+    text-align: center;
+    font-size: 25px;
+}
+
+h3 {
+    margin-top: -20px;
+    text-align: center;
+    font-size: 22px;
+}
+
+
+form {
+    text-align: center;
+}
+
+div section iframe {
+    margin: 1px 1px 80px 80px;
+}
+
+.logoWhap {
+    position: fixed;
+    width: 30px;
+    height: 30px;
+    left: 92%;
+    top: 90%;
+}
+
+
+
+
+/* FOOTER */
+footer {
+    background-color: rgb(244, 205, 179);
+    height: 150px;
+    width: auto;
+}
+
+.redes {
+    width: 25px;
+    height: 25px;
+    margin-right: 10px;
+}
+
+footer ul li {
+    list-style-type: none;
+}
+
+footer ul li a {
+    color: black;
+    text-decoration: none;
+}
+
+.footerFlex {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.footerFlex2 {
+    display: flex;
+    flex-direction: row;
+    margin-left: -35px;
+}
+
+.menosMarginL {
+    margin-left: -35px;
+    margin-top: -7px;
+}
+
+footer ul li h4 {
+    margin-top: 30px;
+}
+
+
+
+/* MEDIA 768PX */
+
+@media screen and (min-width:768px) and (max-width:1300px) {
+
+    #grillaPlantasExt {
+        display: grid;
+        grid-template-areas:
+            "header"
+            "nav"
+            "nivelFacil"
+            "nivelInter"
+            "nivelDific"
+            "newsletter"
+            "footer";
+        grid-template-rows: 250px 100px 400px 400px 450px 100px 150px;
+    }
+
+
+    /* CSS BODY */
+    body {
+        background-image: url(../multimedia/img/mifondo.png);
+        font-size: 17px;
+        overflow: auto;
+    }
+
+    /* LOGO */
+    .logo {
+        margin: auto;
+        display: block;
+        height: 250px;
+        width: 250px;
+    }
+
+    /* NAVEGADOR */
+    div nav ul li a {
+        margin: 60px 60px 60px 120px;
+    }
+
+    .medidasDrop {
+        width: 100px;
+        height: 100px;
+    }
+
+
+    .fotoIntroductoria {
+        text-align: center;
+    }
+
+    .tamañoImgIndex {
+        margin: 1px 50px 50px 50px;
+        height: 350px;
+        width: 250px;
+    }
+
+
+    #texto {
+        display: block;
+        text-align: center;
+
+    }
+
+    .tamañoImagen {
+        height: 250px;
+        width: 200px;
+        margin: 30px 30px 30px 30px;
+        display: inline;
+    }
+
+    .logoWhap {
+        position: fixed;
+        width: 50px;
+        height: 50px;
+        left: 95%;
+        top: 90%;
+    }
+
+    /* FOOTER */
+    div section iframe {
+        margin: 30px 1px 28% 28%;
+    }
+
+    .redes {
+        width: 35px;
+        height: 35px;
+        margin-right: 20px;
+    }
+
+    footer {
+        background-color: rgb(244, 205, 179);
+        height: 150px;
+    }
+
+}

@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inicio</title>
+    <link rel="stylesheet" href="./lib/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body class="carrousel">
+    <!-- MENU -->
+    <header>
+        <img src="./multimedia/img/LOGG.png" alt="logo" class="logo">
+    </header>
+
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-transparent">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Menú</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="./index.html">Inicio</a>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Tipo de Plantas
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="./pages/plantasInterior.html">Plantas de Interior</a>
+                            </li>
+                            <li><a class="dropdown-item" href="./pages/plantasExterior.html">Plantas de Exterior</a>
+                            </li>
+                        </ul>
+                    </li>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./pages/descubre.html">Descubrí</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./pages/contacto.html">Contacto</a>
+                    </li>
+                </ul>
+                <form class="d-flex">
+                    <input class="form-control me-2" type="search" placeholder="¿Qué buscás?" aria-label="Search">
+                    <button class="btn btn-outline-secondary" type="submit">Buscar</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+
+
+    <!-- MAIN -->
+
+    <main>
+        <div id="carouselExampleCaptions" class="carousel slide espacioSuperior" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+                    aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                    aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+                    aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="./multimedia/img/FotoIntroductoria.png" class="d-block w-100" alt="FotoIntroductoria">
+                    <div class="carousel-caption d-none d-md-block">
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <a href="./pages/descubre.html">
+                        <img src="./multimedia/img/DescubriSigno.png" class="d-block w-100" alt="DescubriSigno">
+                        <div class="carousel-caption d-none d-md-block">
+                    </a>
+
+                </div>
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+        </div>
+
+        <section id="texto" class="espacioSuperior">
+            <h1>Beneficios de tener plantas en tu casa</h1>
+            <ul class="puntos">
+                <li>Limpian el ambiente y regulan la humedad</li>
+                <li>Es una buena terapia contra el estrés</li>
+                <li>Aportan energía y vitalidad</li>
+                <li>Ayudan a dormir mejor</li>
+                <li>Reducen el polvo</li>
+
+            </ul>
+        </section>
+
+        <section class="fotosFlex masEspacio">
+            <div>
+                <a href="./pages/plantasInterior.html">
+                    <img src="./multimedia/img/Plantas de Interior (1).png" alt="PlantasDeInterior"
+                        class="tamañoImgIndex">
+                </a>
+            </div>
+            <div>
+                <a href="./pages/plantasExterior.html">
+                    <img src="./multimedia/img/Plantas de exterior.png" alt="PlantasDeExterior" class="tamañoImgIndex">
+                </a>
+            </div>
+
+        </section>
+
+        <section class="espacioSuperior">
+            <h1>¡Plantas Nuevas!</h1>
+            <div class="fotosFlex">
+                <div>
+                    <img src="./multimedia/img/LenguaDeSuegra.png" alt="LenguaDeSuegra" class="tamañoImagen">
+                    <h3>Sansevieria</h3>
+                </div>
+                <div>
+                    <img src="./multimedia/img/Rex.png" alt="BegoniaRex" class="tamañoImagen">
+                    <h3>Begonia Rex</h3>
+                </div>
+                <div>
+                    <img src="./multimedia/img/Sarracenia.png" alt="Sarracenia" class="tamañoImagen">
+                    <h3>Sarracenia</h3>
+                </div>
+                <div>
+                    <img src="./multimedia/img/Cipres Limon.png" alt="CiprésLimón" class="tamañoImagen">
+                    <h3>Ciprés Limón</h3>
+                </div>
+            </div>
+        </section>
+
+        <section class="espacioSuperior">
+            <h1>Esquejes</h1>
+            <iframe class="iframe" width="560" height="315" src="https://www.youtube.com/embed/Yl5Fpe4ldjc"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"></iframe>
+        </section>
+
+        <section>
+            <form class="espacioSuperior">
+                <h1> Suscribite a nuestro <input type="email" placeholder="Newsletter"></h1>
+            </form>
+        </section>
+
+        <div>
+            <a href="https://web.whatsapp.com/" target="_blank">
+                <img src="./multimedia/img/WhatsApp.png" alt="LogoWhatsapp" class="logoWhap">
+            </a>
+        </div>
+
+    </main>
+
+
+
+    <!-- FOOTER -->
+    <footer>
+
+        <ul class="footerFlex espacioSuperior">
+            <li>
+                <h4>Menú</h4>
+                <ul class="menosMarginL">
+                    <li><a href="./index.html">Inicio</a></li>
+                    <li><a href="./pages/contacto.html">Consultas</a></li>
+                </ul>
+            </li>
+
+            <li>
+                <h4>Tipos de Plantas</h4>
+                <ul class="menosMarginL">
+                    <li><a href="./pages/plantasInterior.html">Plantas de Interior</a></li>
+                    <li><a href="./pages/plantasExterior.html">Plantas de Exterior</a></li>
+                </ul>
+            </li>
+
+            <li>
+                <h4>Mis Redes</h4>
+                <ul class="footerFlex2">
+                    <li>
+                        <a href="https://www.instagram.com/_camijuarez/" target="_blank">
+                            <img src="./multimedia/img/Instagram_logo_2016.svg.webp" alt="instagram" class="redes"></a>
+                    </li>
+                    <li>
+                        <a href="https://www.facebook.com/camijuarez.a" target="_blank">
+                            <img src="./multimedia/img/Facebook_logo_(square).png.webp" alt="facebook" class="redes">
+                        </a>
+                    </li>
+                </ul>
+            </li>
+
+        </ul>
+
+
+    </footer>
+
+
+    <script src="./lib/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+</body>
+
+</html>
