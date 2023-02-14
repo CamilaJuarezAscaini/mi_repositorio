@@ -10,15 +10,15 @@
     <link rel="stylesheet" href="../css/style.css">
 </head>
 
-<body>
+<body id="grilla">
 
-    <header>
+    <header id="header">
         <img src="../multimedia/img/LOGG.png" alt="logo" class="logo">
     </header>
 
     <!-- MENÚ -->
 
-    <nav class="navbar navbar-expand-md navbar-light ">
+    <nav id="nav" class="navbar navbar-expand-md navbar-light ">
         <div class="container position-absolute end-1">
 
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
@@ -65,14 +65,29 @@
 
     <!-- MAIN -->
 
-    <main>
+    <main id="form">
 
-        <!-- HACER MAS CHICO EL NEWSLETTER, TERMINAR CONTACTO CON GRID GRILLAS, VER LAS CLASES, CAMBIAR CON HOVER EL COLOR AZUL DEL MENU -->
+        <!-- HACER MAS CHICO EL NEWSLETTER, TERMINAR CONTACTO CON GRID GRILLAS, CAMBIAR CON HOVER EL COLOR AZUL DEL MENU -->
+        <form action="mailto:camilajuarez_96@hotmail.com" method="post" enctype="text/plain">
+            <div class="mb-3">
+                <label for="exampleInputEmail1" class="form-label">Email address</label>
+                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+              </div>
+              <div class="mb-3">
+                <label for="exampleInputPassword1" class="form-label">Password</label>
+                <input type="password" class="form-control" id="exampleInputPassword1">
+              </div>
+              <div class="mb-3 form-check">
+                <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                <label class="form-check-label" for="exampleCheck1">Check me out</label>
+              </div>
+              <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
 
-
-        <section class="espacioSuperior">
+        <section class="espacioSuperior" id="Newsletter">
             <form>
-                <h1> Suscribite a nuestro <input type="email" placeholder="Newsletter"></h1>
+                <h2> Suscribite a nuestro <input type="email" placeholder="Newsletter"></h2>
             </form>
         </section>
 
@@ -86,7 +101,7 @@
 
 
     <!-- FOOTER -->
-    <footer>
+    <footer id="footer">
         <ul class="footerFlex espacioSuperior">
             <li>
                 <h4>Menú</h4>

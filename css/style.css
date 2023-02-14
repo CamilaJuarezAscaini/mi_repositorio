@@ -211,19 +211,16 @@ footer ul li h4 {
 
 @media screen and (min-width:768px) and (max-width:1300px) {
 
-    #grillaPlantasExt {
+    #grilla {
         display: grid;
         grid-template-areas:
             "header"
             "nav"
-            "nivelFacil"
-            "nivelInter"
-            "nivelDific"
+            "form"
             "newsletter"
             "footer";
-        grid-template-rows: 250px 100px 400px 400px 450px 100px 150px;
+        grid-template-rows: 250px 100px 600px 100px 150px;
     }
-
 
     /* CSS BODY */
     body {
