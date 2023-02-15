@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="../css/style.css">
 </head>
 
-<body id="grilla">
+<body>
 
     <header id="header">
         <img src="../multimedia/img/LOGG.png" alt="logo" class="logo">
@@ -18,9 +18,9 @@
 
     <!-- MENÚ -->
 
-    <nav id="nav" class="navbar navbar-expand-md navbar-light ">
-        <div class="container position-absolute end-1">
-
+    <nav class="navbar navbar-expand-lg navbar-light bg-transparent">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Menú</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                 data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
                 aria-label="Toggle navigation">
@@ -30,34 +30,29 @@
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                     <li class="nav-item">
                         <a class="nav-link active" aria-current="page" href="../index.html">Inicio</a>
-                    </li>
-
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
                             data-bs-toggle="dropdown" aria-expanded="false">
                             Tipo de Plantas
                         </a>
                         <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <li><a class="dropdown-item" href="../pages/plantasInterior.html">Plantas de
-                                    Interior</a>
+                            <li><a class="dropdown-item" href="./plantasInterior.html">Plantas de Interior</a>
                             </li>
-                            <li><a class="dropdown-item" href="../pages/plantasExterior.html">Plantas de
-                                    Exterior</a>
+                            <li><a class="dropdown-item" href="./plantasExterior.html">Plantas de Exterior</a>
                             </li>
                         </ul>
                     </li>
-
-                    <li class="nav-item">
-                        <a class="nav-link" href="../pages/descubre.html">Descubrí</a>
                     </li>
-
                     <li class="nav-item">
-                        <a class="nav-link" href="../pages/contacto.html">Contacto</a>
+                        <a class="nav-link" href="./descubre.html">Descubrí</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./contacto.html">Contacto</a>
                     </li>
                 </ul>
                 <form class="d-flex">
-                    <input class="form-control me-2" type="search" placeholder="¿Qué buscas?" aria-label="Search">
-                    <button class="btn btn-outline-success bg-light text-dark" type="submit">Buscar</button>
+                    <input class="form-control me-2" type="search" placeholder="¿Qué buscás?" aria-label="Search">
+                    <button class="btn btn-outline-secondary" type="submit">Buscar</button>
                 </form>
             </div>
         </div>
@@ -65,27 +60,38 @@
 
     <!-- MAIN -->
 
-    <main id="form">
+    <main id="grilla">
 
-        <!-- HACER MAS CHICO EL NEWSLETTER, TERMINAR CONTACTO CON GRID GRILLAS, CAMBIAR CON HOVER EL COLOR AZUL DEL MENU -->
-        <form action="mailto:camilajuarez_96@hotmail.com" method="post" enctype="text/plain">
-            <div class="mb-3">
-                <label for="exampleInputEmail1" class="form-label">Email address</label>
-                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-                <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
-              </div>
-              <div class="mb-3">
-                <label for="exampleInputPassword1" class="form-label">Password</label>
-                <input type="password" class="form-control" id="exampleInputPassword1">
-              </div>
-              <div class="mb-3 form-check">
-                <input type="checkbox" class="form-check-input" id="exampleCheck1">
-                <label class="form-check-label" for="exampleCheck1">Check me out</label>
-              </div>
-              <button type="submit" class="btn btn-primary">Submit</button>
-        </form>
+        <section id="form">
+        <h2 class="espacioSuperior">Deja cualquier consulta que tengas, responderé lo antes posible</h2>
 
-        <section class="espacioSuperior" id="Newsletter">
+            <form class="espacioSuperior" action="mailto:camilajuarez_96@hotmail.com" method="post"
+                enctype="text/plain">
+                <div class="mb-3">
+                    <label for="InputName" class="form-label">Nombre*</label>
+                    <input type="text" class="form-control medidasForm">
+                </div>
+                <div class="mb-3">
+                    <label for="InputEmail1" class="form-label">Email*</label>
+                    <input type="email" class="form-control medidasForm" id="exampleInputEmail1"
+                        aria-describedby="emailHelp">
+                    <div id="emailHelp" class="form-text">No compartiremos tu email con nadie.</div>
+                </div>
+                <div class="mb-3">
+                    <label for="exampleFormControlTextarea1" class="form-label">Consulta</label>
+                    <textarea class="form-control medidasForm" id="exampleFormControlTextarea1" rows="3"></textarea>
+                </div>
+                <div class="mb-3 form-check">
+                    <label for="check">Deseo recibir actualizaciones</label>
+                    <input type="checkbox" id="check">
+                </div>
+                <button type="submit" class="btn btn-secondary">Enviar</button>
+            </form>
+        </section>
+
+
+
+        <section class="espacioSuperior" id="newsletter">
             <form>
                 <h2> Suscribite a nuestro <input type="email" placeholder="Newsletter"></h2>
             </form>
@@ -101,7 +107,7 @@
 
 
     <!-- FOOTER -->
-    <footer id="footer">
+    <footer class="espacioSuperior" id="footer">
         <ul class="footerFlex espacioSuperior">
             <li>
                 <h4>Menú</h4>
