@@ -1,0 +1,282 @@
+@import url('https://fonts.googleapis.com/css2?family=Itim&display=swap');
+
+
+/*CSS BODY*/
+* {
+    margin: 0%;
+    padding: 0%;
+    font-family: Itim;
+    font-size: 20px;
+
+}
+
+body {
+    background-image: url(../multimedia/img/mifondo.png);
+    overflow: auto;
+}
+
+/*NAVEGADOR*/
+.dropdown-item:active {
+    background-color: rgb(245, 148, 113);
+}
+
+
+/* LOGO */
+header {
+    img {
+        margin: auto;
+        display: block;
+        height: 25%;
+        width: 25%;
+        margin-top: 30px;
+    }
+}
+
+
+/* VARIABLES */
+
+$espacioSuperior: 35px;
+$masEspacio: 80px;
+
+
+// PAGINA-DESCUBRE
+#descubre {
+    h1 {
+        margin-top: $masEspacio;
+    }
+
+    div {
+        margin-top: $espacioSuperior;
+
+        p {
+            margin-left: 15%;
+            margin-right: 15%;
+        }
+    }
+}
+
+// INDEX
+
+#texto {
+    display: block;
+    text-align: center;
+    justify-content: center;
+    margin-top: $espacioSuperior;
+
+    ul {
+        list-style-type: none;
+    }
+}
+
+.fotosFlex {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.tamañoImagen {
+    height: 220px;
+    width: 170px;
+    margin: 10px 20px 20px 20px;
+    display: inline;
+}
+
+.fotosColumn {
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#fotosPaginas {
+    @extend .fotosFlex;
+
+    img {
+        margin: 1px 30px 30px 30px;
+        height: 300px;
+        width: 200px;
+    }
+}
+
+#carouselExampleCaptions {
+    margin-top: $espacioSuperior
+}
+
+#plantasNuevas {
+    @extend .fotosFlex;
+
+    img {
+        @extend .tamañoImagen;
+    }
+}
+
+// PLANTAS PAGES
+
+#plantas {
+    margin-top: $espacioSuperior;
+
+    div {
+        @extend .fotosFlex;
+
+        div {
+            div {
+                @extend .fotosColumn;
+                margin-top: $espacioSuperior;
+
+                img {
+                    @extend .tamañoImagen;
+                }
+            }
+        }
+
+
+    }
+}
+
+#plantas2 {
+    margin-top: $espacioSuperior;
+
+    div {
+        @extend .fotosFlex;
+
+        div {
+            div {
+                @extend .fotosColumn;
+                margin-top: $espacioSuperior;
+
+                img {
+                    @extend .tamañoImagen;
+                }
+            }
+        }
+
+
+    }
+}
+
+// TITULOS
+
+h1 {
+    color: rgb(37, 100, 118);
+    text-align: center;
+    font-size: 35px;
+}
+
+h2 {
+    color: rgb(92, 138, 151);
+    text-align: center;
+    font-size: 25px;
+}
+
+h3 {
+    display: flex;
+    margin-top: -20px;
+    justify-content: center;
+    font-size: 22px;
+}
+
+
+.logoWhap {
+    position: fixed;
+    width: 45px;
+    height: 45px;
+    right: 3%;
+    bottom: 2%;
+}
+
+// CONTACTO PAGE
+
+#form {
+    h2 {
+        margin-top: $espacioSuperior;
+    }
+
+    form {
+        margin-top: $espacioSuperior;
+
+        div {
+            input {
+                width: 50%;
+                margin-left: 25%;
+            }
+
+            textarea {
+                width: 50%;
+                margin-left: 25%;
+            }
+        }
+    }
+}
+
+
+// INDEX
+
+main {
+    section {
+        margin-top: $espacioSuperior;
+
+        iframe {
+            margin-left: 30%;
+            margin-right: 30%;
+            width: 40%;
+        }
+    }
+}
+
+main {
+    section {
+        form {
+            margin-top: $espacioSuperior;
+            text-align: center;
+        }
+    }
+}
+
+
+/* FOOTER */
+
+$footerTexto: 80%;
+
+footer {
+    background-color: rgb(244, 205, 179);
+    height: auto;
+    width: auto;
+    margin-top: $espacioSuperior;
+
+    div {
+        h5 {
+            margin-top: $espacioSuperior;
+            font-size: 96%;
+        }
+
+        ul {
+            margin-left: -35px;
+            margin-top: -7px;
+
+            li {
+                list-style-type: none;
+
+                a {
+                    color: black;
+                    text-decoration: none;
+                    font-size: $footerTexto;
+
+                    img {
+                        width: 80%;
+                        height: 80%;
+                    }
+                }
+
+            }
+        }
+    }
+}
+
+
+.footerFlex {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin-left: 5%;
+}
