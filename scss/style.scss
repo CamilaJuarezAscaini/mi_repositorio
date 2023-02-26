@@ -134,8 +134,6 @@ $masEspacio: 80px;
                 }
             }
         }
-
-
     }
 }
 
@@ -155,8 +153,6 @@ $masEspacio: 80px;
                 }
             }
         }
-
-
     }
 }
 
@@ -244,7 +240,7 @@ main {
 $footerTexto: 80%;
 
 footer {
-    background-color: rgb(244, 205, 179);
+    background-image: linear-gradient(to bottom, rgb(253, 202, 167), rgb(255, 223, 201));
     height: auto;
     width: auto;
     margin-top: $espacioSuperior;
