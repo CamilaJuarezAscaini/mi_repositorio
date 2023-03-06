@@ -26,9 +26,8 @@ header {
     img {
         margin: auto;
         display: block;
-        height: 25%;
-        width: 25%;
-        margin-top: 30px;
+        height: 23%;
+        width: 23%;
     }
 }
 
@@ -132,6 +131,10 @@ $masEspacio: 80px;
                 img {
                     @extend .tamañoImagen;
                 }
+
+                button {
+                    margin-top: -8px;
+                }
             }
         }
     }
@@ -151,10 +154,28 @@ $masEspacio: 80px;
                 img {
                     @extend .tamañoImagen;
                 }
+
+                button {
+                    margin-top: -8px;
+                }
             }
         }
     }
 }
+
+.modal-body {
+    p {
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-size: medium;
+    }
+
+    img{
+        margin-top: -10px;
+        margin-bottom: 27px;
+    }
+
+}
+
 
 // TITULOS
 

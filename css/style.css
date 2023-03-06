@@ -22,9 +22,8 @@ body {
 header img {
   margin: auto;
   display: block;
-  height: 25%;
-  width: 25%;
-  margin-top: 30px;
+  height: 23%;
+  width: 23%;
 }
 
 /* VARIABLES */
@@ -90,12 +89,29 @@ header img {
 #plantas div div div {
   margin-top: 35px;
 }
+#plantas div div div button {
+  margin-top: -8px;
+}
+
 #plantas2 {
   margin-top: 35px;
 }
 #plantas2 div div div {
   margin-top: 35px;
 }
+#plantas2 div div div button {
+  margin-top: -8px;
+}
+
+.modal-body p {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: medium;
+}
+.modal-body img {
+  margin-top: -10px;
+  margin-bottom: 27px;
+}
+
 h1 {
   color: rgb(37, 100, 118);
   text-align: center;
