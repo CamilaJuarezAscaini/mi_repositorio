@@ -8,22 +8,46 @@
   font-size: 20px;
 }
 
+h1 {
+  color: rgb(37, 100, 118);
+  text-align: center;
+  font-size: 35px;
+}
+
+h2 {
+  color: rgb(92, 138, 151);
+  text-align: center;
+  font-size: 25px;
+}
+
+h3 {
+  display: flex;
+  margin-top: -20px;
+  justify-content: center;
+  font-size: 22px;
+}
+
+h5 {
+  margin-top: 35px;
+  font-size: 96%;
+}
+
 body {
   background-image: url(../multimedia/img/mifondo.png);
   overflow: auto;
-}
-
-/*NAVEGADOR*/
-.dropdown-item:active {
-  background-color: rgb(245, 148, 113);
 }
 
 /* LOGO */
 header img {
   margin: auto;
   display: block;
-  height: 23%;
-  width: 23%;
+  height: 24%;
+  width: 24%;
+}
+
+/*NAVEGADOR*/
+.dropdown-item:active {
+  background-color: rgb(245, 148, 113);
 }
 
 /* VARIABLES */
@@ -112,25 +136,6 @@ header img {
   margin-bottom: 27px;
 }
 
-h1 {
-  color: rgb(37, 100, 118);
-  text-align: center;
-  font-size: 35px;
-}
-
-h2 {
-  color: rgb(92, 138, 151);
-  text-align: center;
-  font-size: 25px;
-}
-
-h3 {
-  display: flex;
-  margin-top: -20px;
-  justify-content: center;
-  font-size: 22px;
-}
-
 .logoWhap {
   position: fixed;
   width: 45px;
@@ -174,10 +179,6 @@ footer {
   height: auto;
   width: auto;
   margin-top: 35px;
-}
-footer div h5 {
-  margin-top: 35px;
-  font-size: 96%;
 }
 footer div ul {
   margin-left: -35px;
