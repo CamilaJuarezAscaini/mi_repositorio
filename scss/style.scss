@@ -17,6 +17,7 @@
     width: $width;
 }
 
+
 body {
     background-image: url(../multimedia/img/mifondo.png);
     overflow: auto;
@@ -48,6 +49,10 @@ $masEspacio: 80px;
 #descubre {
     h1 {
         margin-top: $masEspacio;
+    }
+    p {
+        margin-left: 15%;
+        margin-right: 15%;
     }
 
     div {
@@ -276,6 +281,6 @@ footer {
 .footerFlex {
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly;
-    margin-left: 5%;
+    justify-content: start;
+    margin-left: 26%;
 }
